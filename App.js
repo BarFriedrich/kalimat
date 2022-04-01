@@ -42,7 +42,7 @@ const App = () => {
     return (
       <NavigationContainer>
         <AppStack.Navigator headerShown="false">
-          <AppStack.Screen name = "main" component={MainScreen} />
+          <AppStack.Screen name = "Home" component={MainScreen} />
           <AppStack.Screen name = "bubbles" component={Bubbles} />
         </AppStack.Navigator>
       </NavigationContainer>

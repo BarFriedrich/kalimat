@@ -19,6 +19,7 @@ const Register = ({ navigation }) => {
     }
 
     function createUser(userEmail, userPassword) {
+        console.log(userEmail);
         createUserWithEmailAndPassword(auth, userEmail, userPassword)
             .then((userCredential) => {
                 const user = userCredential.user;
@@ -28,6 +29,7 @@ const Register = ({ navigation }) => {
                 const errorCode = error.code;
                 const errorMessage = error.message;
                 console.log(errorMessage);
+                console.log(userEmail);
             });
     }
 
