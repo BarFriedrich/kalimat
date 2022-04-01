@@ -6,7 +6,6 @@ import { addDoc, collection, getFirestore } from 'firebase/firestore';
 
 
 const Register = ({ navigation }) => {
-
     const [email, setEmail] = useState('');
     const [psw, setPsw] = useState('');
     const [confirmPsw, setConfirmPsw] = useState('');
@@ -55,6 +54,7 @@ const Register = ({ navigation }) => {
         </View>
     )
 }
+
 const styles = StyleSheet.create({
     background: {
         flex: 1,
@@ -115,4 +115,5 @@ const styles = StyleSheet.create({
         color: 'darkcyan',
     },
 });
+
 export default Register;

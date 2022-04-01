@@ -105,6 +105,5 @@ const styles = StyleSheet.create({
         color: 'darkcyan',
     },
 });
-export default Login;
 
-// Test change
+export default Login;
